@@ -4,14 +4,14 @@
 <body>
 
 
-<p> Existing items in the database4324: </p>
+<p> Existing items in the database: </p>
 
 <div ng-app="myApp" ng-controller="namesCtrl">
-	<form name="myForm">
+	
 	<ul>
 		<li ng-repeat="x in items">{{x.name}}</li>
 	</ul>
-	
+	<form name="myForm">
 	Name: <input ng-model="addName" required> 
 	Quantity: <input ng-model="addQuantity"> 
 	Price: <input ng-model="addPrice"> 
