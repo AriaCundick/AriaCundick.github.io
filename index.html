@@ -11,11 +11,11 @@
 	<ul>
 		<li ng-repeat="x in items">{{x.name}}</li>
 	</ul>
-	Name: <input ng-model="addName" onblur="enableAdd()" >
+	Name: <input ng-model="addName" onblur=enableAdd() >
 	Quantity: <input ng-model="addQuantity">
 	Price: <input ng-model="addPrice">
 
-	<button id="addBtn" ng-click="addItem()"  >Add</button>
+	<button id='addBtn' ng-click="addItem()"  >Add</button>
 
 </div>
 
