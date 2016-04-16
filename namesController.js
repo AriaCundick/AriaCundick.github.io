@@ -11,7 +11,7 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 	];
 
 	$scope.enableAdd = function() {
-		if(angular.equals($scope.addName, ''))
+		if($scope.addName === '')
 			document.getElementById("addBtn").disabled = true;
 		else
 			document.getElementById("addBtn").disabled = false;
