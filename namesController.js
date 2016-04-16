@@ -10,6 +10,9 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 	];
 	$scope.addItem = function() {
 		$scope.items.push({name: $scope.addName, quantity: $scope.addQuantity, price: $scope.addPrice});
+		$scope.addName="";
+		$scope.addQuantity="";
+		$scope.addPrice="";
 	}
 	
 });
