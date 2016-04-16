@@ -9,7 +9,9 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 		{name: "Peaches", quantity: 19, price: 1.25},
 		{name: "Ice cream", quantity: 36, price: 1.89},
 	];
-	if($scope.addName != "" && $scope.addQuantity != "" && $scope.addPrice != "") {
+
+	if($scope.addName != "") {
+		document.getElementById("addBtn").disabled = false;
 		$scope.addItem = function() {
 			$scope.items.push({name: $scope.addName, quantity: $scope.addQuantity, price: $scope.addPrice});
 			$scope.addName="";
@@ -17,6 +19,10 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 			$scope.addPrice="";
 		}
 	}
+	else
+		document.getElementById("addBtn").disabled = true;
+
+
 
 	
 	
