@@ -3,7 +3,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <body>
 
-
+<script src= "namesController.js"></script>
 <p> Existing items in the document2: </p>
 
 <div ng-app="myApp" ng-controller="namesCtrl">
@@ -12,7 +12,7 @@
 		<li ng-repeat="x in items">{{x.name}}</li>
 	</ul>
 	
-	Name: <input ng-model="addName" onchange="checkField()"> 
+	Name: <input ng-model="addName" ngchange="checkField()"> 
 	Quantity: <input ng-model="addQuantity"> 
 	Price: <input ng-model="addPrice"> 
 	
@@ -20,7 +20,7 @@
 
 </div>
 
-<script src= "namesController.js"></script>
+
 
 </body>
 </html>
