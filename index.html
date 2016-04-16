@@ -12,7 +12,7 @@
 		<li ng-repeat="x in items">{{x.name}}</li>
 	</ul>
 	
-	Name: <input ng-model="addName" required> 
+	Name: <input ng-model="addName" onchange="checkField()"> 
 	Quantity: <input ng-model="addQuantity"> 
 	Price: <input ng-model="addPrice"> 
 	
