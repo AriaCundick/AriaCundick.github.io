@@ -13,7 +13,7 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 	$scope.checkField = function()
 	{
 		if($scope.addName == '')
-			document.getElementById('addBtn').disabled = true;
+			document.getElementById('addBtn').style.background = "#074E67";
 		else
 			document.getElementById('addBtn').disabled = false;
 	}
