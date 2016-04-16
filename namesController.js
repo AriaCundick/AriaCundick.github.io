@@ -1,5 +1,5 @@
 angular.module('myApp', []).controller('namesCtrl', function($scope) {
-	document.getElementById("addBtn").disabled = true;
+	
 	$scope.items = [
 		{name: "Peanut Butter", quantity: 24, price: 4.29},
 		{name: "Jelly", quantity: 14, price: 3.29},
@@ -10,10 +10,10 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 		{name: "Ice cream", quantity: 36, price: 1.89},
 	];
 
-		//if(myForm.addName.$invalid == true)
-		//	document.getElementById("addBtn").disabled = true;
-		//else 
-		//	document.getElementById("addBtn").disabled = false;
+		if($scope.addName.$invalid === true)
+			document.getElementById("addBtn").disabled = true;
+		else 
+			document.getElementById("addBtn").disabled = false;
 		
 	$scope.addItem = function() {
 		$scope.items.push({name: $scope.addName, quantity: $scope.addQuantity, price: $scope.addPrice});
