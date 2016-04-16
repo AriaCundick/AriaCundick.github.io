@@ -10,27 +10,20 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 		{name: "Ice cream", quantity: 36, price: 1.89},
 	];
 
-	if($scope.addName != "") {
-		document.getElementById("addBtn").disabled = false;
-		$scope.addItem = function() {
-			$scope.items.push({name: $scope.addName, quantity: $scope.addQuantity, price: $scope.addPrice});
-			$scope.addName="";
-			$scope.addQuantity="";
-			$scope.addPrice="";
-		}
+	$scope.addItem = function() {
+		$scope.items.push({name: $scope.addName, quantity: $scope.addQuantity, price: $scope.addPrice});
+		$scope.addName="";
+		$scope.addQuantity="";
+		$scope.addPrice="";
+		
 	}
-	else
-		document.getElementById("addBtn").disabled = true;
-
-
-
 	
 	
 });
 
 function enableAdd(v1, v2, v3) {
-		if(v1 != "")
-			return true;
+		if(v1.value != '')
+			document.getElementById("addBtn").disabled = false;
 		else
-			return false;
+			document.getElementById("addBtn").disabled = true;
 	}
