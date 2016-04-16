@@ -10,7 +10,7 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 		{name: "Ice cream", quantity: 36, price: 1.89},
 	];
 
-		if($scope.addName === "")
+		if($scope.addName == "")
 			document.getElementById("addBtn").disabled = true;
 		else
 			document.getElementById("addBtn").disabled = false;
