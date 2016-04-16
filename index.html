@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang='en-US'>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
 <head>
   <title>My First HTML</title>
@@ -7,7 +8,11 @@
 </head>
 
 <body title="Page">
-<h1 title="sup">Hello World</h1>
-<p title="paragraph title">I'm hosted with GitHub Pages.</p>
+
+<div ng-app="">
+ 	<p>Name: <input type="text" ng-model="name"></p>
+ 	<p ng-bind="name"></p>
+</div>
+
 </body>
 </html>
