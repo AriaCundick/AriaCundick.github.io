@@ -12,7 +12,7 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 
 		if($scope.addName == "")
 			document.getElementById("addBtn").disabled = true;
-		else
+		else if($scope.addName != "")
 			document.getElementById("addBtn").disabled = false;
 	
 	$scope.addItem = function() {
