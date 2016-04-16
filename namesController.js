@@ -10,9 +10,9 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 		{name: "Ice cream", quantity: 36, price: 1.89},
 	];
 
-		if($scope.addName == "")
+		if(myForm.addName.$invalid)
 			document.getElementById("addBtn").disabled = true;
-		else if($scope.addName != "")
+		else 
 			document.getElementById("addBtn").disabled = false;
 	
 	$scope.addItem = function() {

@@ -11,10 +11,11 @@
 	<ul>
 		<li ng-repeat="x in items">{{x.name}}</li>
 	</ul>
-	Name: <input ng-model="addName" >
-	Quantity: <input ng-model="addQuantity">
-	Price: <input ng-model="addPrice">
-
+	<form name="myForm">
+	Name: <input ng-model="addName" required> <br>
+	Quantity: <input ng-model="addQuantity"> <br>
+	Price: <input ng-model="addPrice"> <br>
+	</form>
 	<button id='addBtn' type="text" ng-click="addItem()"  >Add</button>
 
 </div>
