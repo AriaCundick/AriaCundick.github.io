@@ -10,6 +10,12 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 		{name: "Ice cream", quantity: 36, price: 1.89},
 	];
 
+	$scope.enableAdd = function() {
+		if($scope.addName == '')
+			document.getElementById("addBtn").disabled = true;
+		else
+			document.getElementById("addBtn").disabled = false;
+	}
 	$scope.addItem = function() {
 		$scope.items.push({name: $scope.addName, quantity: $scope.addQuantity, price: $scope.addPrice});
 		$scope.addName="";
@@ -20,10 +26,3 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 	
 	
 });
-
-function enableAdd(v1, v2, v3) {
-		if(v1.value != '')
-			document.getElementById("addBtn").disabled = false;
-		else
-			document.getElementById("addBtn").disabled = true;
-	}
