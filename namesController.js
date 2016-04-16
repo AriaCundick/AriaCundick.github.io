@@ -1,5 +1,5 @@
 angular.module('myApp', []).controller('namesCtrl', function($scope) {
-	
+	document.getElementById("addBtn").disabled = true;
 	$scope.items = [
 		{name: "Peanut Butter", quantity: 24, price: 4.29},
 		{name: "Jelly", quantity: 14, price: 3.29},
