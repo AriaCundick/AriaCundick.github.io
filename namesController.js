@@ -10,11 +10,11 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 		{name: "Ice cream", quantity: 36, price: 1.89},
 	];
 
-		if(myForm.addName.$invalid == true)
-			document.getElementById("addBtn").disabled = true;
-		else 
-			document.getElementById("addBtn").disabled = false;
-	
+		//if(myForm.addName.$invalid == true)
+		//	document.getElementById("addBtn").disabled = true;
+		//else 
+		//	document.getElementById("addBtn").disabled = false;
+		
 	$scope.addItem = function() {
 		$scope.items.push({name: $scope.addName, quantity: $scope.addQuantity, price: $scope.addPrice});
 		$scope.addName="";
