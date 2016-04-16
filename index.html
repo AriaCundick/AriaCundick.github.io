@@ -7,16 +7,16 @@
 <p> Existing items in the database45: </p>
 
 <div ng-app="myApp" ng-controller="namesCtrl">
-
+	<form name="myForm">
 	<ul>
 		<li ng-repeat="x in items">{{x.name}}</li>
 	</ul>
-	<form name="myForm">
+	
 	Name: <input ng-model="addName" required> <br>
 	Quantity: <input ng-model="addQuantity"> <br>
 	Price: <input ng-model="addPrice"> <br>
 	</form>
-	<button id='addBtn' type="text" ng-click="addItem()"  >Add</button>
+	<button id='addBtn' ng-click="addItem()"  >Add</button>
 
 </div>
 

@@ -10,7 +10,7 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 		{name: "Ice cream", quantity: 36, price: 1.89},
 	];
 
-		if(myForm.addName.$invalid)
+		if(myForm.addName.$invalid == true)
 			document.getElementById("addBtn").disabled = true;
 		else 
 			document.getElementById("addBtn").disabled = false;
