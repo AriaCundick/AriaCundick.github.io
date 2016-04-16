@@ -17,12 +17,13 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 		}
 	}
 
-	$scope.enableAdd = function(v1, v2, v3) {
-		if(v1 != "" && (v2 != 0 || v3 !=0))
+	
+	
+});
+
+function enableAdd(v1, v2, v3) {
+		if(v1 != "")
 			return true;
 		else
 			return false;
 	}
-	
-});
-
