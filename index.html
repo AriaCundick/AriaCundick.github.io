@@ -67,7 +67,7 @@ Setup the graph
 <script src= "namesController.js"></script>
 <p> Existing items in the document2: </p>
 
-<div ng-app="myApp" ng-controller="namesCtrl">
+<div id="angDiv" ng-app="myApp" ng-controller="namesCtrl">
 	
 	<ul>
 		<li ng-repeat="x in items">{{x.name}}</li>
@@ -79,10 +79,10 @@ Setup the graph
 
 	<button id='addBtn' ng-click="addItem()"  >Add</button>
  	<script>
- 		var tracker = angular.module("myApp");
+ 		
 		 AmCharts.ready(function() {
 		 	var chart = new AmCharts.AmSerialChart();
-		 	chart.dataProvider = tracker.items;
+		 	chart.dataProvider = angular.element(document.getElementById('#angDiv')).scope().items;
 		 	chart.categoryField = "name";
 		 	var graph = new AmCharts.AmGraph();
 			graph.valueField = "quantity";
