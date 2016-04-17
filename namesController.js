@@ -13,7 +13,7 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 	$scope.checkField = function()
 	{
 		if($scope.addName == '')
-			document.body.style.backgroundColor = "red";
+			document.body.style.backgroundColor = "blue";
 		else
 			document.body.style.backgroundColor = "red";
 	}
