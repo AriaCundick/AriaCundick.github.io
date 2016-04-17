@@ -104,6 +104,6 @@ jQuery(function () {
     // initialize the table
     initRowEvents(jQuery(document));
 });
-		 });
+		 
 }//angular.element($("div[ng-controller='namesCtrl']")).scope().items;
 //angular.element(document.getElementById('#angDiv')).scope().items;
