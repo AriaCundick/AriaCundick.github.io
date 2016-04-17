@@ -13,9 +13,9 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 	$scope.checkField = function()
 	{
 		if($scope.addName == '')
-			document.body.style.backgroundColor = "blue";
-		else
-			document.body.style.backgroundColor = "red";
+			return false;
+		else if($scope.addName != '')
+			return true;
 	}
 		
 	$scope.addItem = function() {
