@@ -13,9 +13,9 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 	$scope.checkField = function()
 	{
 		if($scope.addName == '')
-			element(by.id('addBtn')).style.background = '#074E67';
+			document.body.style.backgroundColor = "red";
 		else
-			element(by.id('addBtn')).style.background = '#074E67';
+			document.body.style.backgroundColor = "red";
 	}
 		
 	$scope.addItem = function() {
