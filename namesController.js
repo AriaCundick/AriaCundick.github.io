@@ -10,22 +10,23 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 		{name: "Ice cream", quantity: 36, price: 1.89},
 	];
 
+	createBarChart($scope.items);
 		
 	$scope.addItem = function() {
 		$scope.items.push({name: $scope.addName, quantity: $scope.addQuantity, price: $scope.addPrice});
 		$scope.addName="";
 		$scope.addQuantity="";
 		$scope.addPrice="";
-		createBarChart();
+		createBarChart($scope.items);
 	}
 	
 	
 });
 
-function createBarChart() {
+function createBarChart(items) {
 	AmCharts.ready(function() {
 		 	var chart = new AmCharts.AmSerialChart();
-		 	chart.dataProvider = angular.element($("div[ng-controller='namesCtrl']")).scope().items;//angular.element(document.getElementById('#angDiv')).scope().items;
+		 	chart.dataProvider = items;
 		 	chart.categoryField = "name";
 		 	var graph = new AmCharts.AmGraph();
 			graph.valueField = "quantity";
@@ -35,4 +36,5 @@ function createBarChart() {
 			chart.addGraph(graph);
 			chart.write('chartdiv');
 		 });
-}
+}//angular.element($("div[ng-controller='namesCtrl']")).scope().items;
+//angular.element(document.getElementById('#angDiv')).scope().items;
