@@ -10,21 +10,29 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
 		{name: "Ice cream", quantity: 36, price: 1.89},
 	];
 
-	$scope.checkField = function()
-	{
-		if($scope.addName == '')
-			return false;
-		else if($scope.addName != '')
-			return true;
-	}
 		
 	$scope.addItem = function() {
 		$scope.items.push({name: $scope.addName, quantity: $scope.addQuantity, price: $scope.addPrice});
 		$scope.addName="";
 		$scope.addQuantity="";
 		$scope.addPrice="";
-		
+		createBarChart();
 	}
 	
 	
 });
+
+function createBarChart() {
+	AmCharts.ready(function() {
+		 	var chart = new AmCharts.AmSerialChart();
+		 	chart.dataProvider = angular.element($("div[ng-controller='namesCtrl']")).scope().items;//angular.element(document.getElementById('#angDiv')).scope().items;
+		 	chart.categoryField = "name";
+		 	var graph = new AmCharts.AmGraph();
+			graph.valueField = "quantity";
+			graph.type = "column";
+			chart.angle = 30;
+			chart.depth3D = 15;
+			chart.addGraph(graph);
+			chart.write('chartdiv');
+		 });
+}
