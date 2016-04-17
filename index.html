@@ -17,11 +17,11 @@
 	Price: <input ng-model="addPrice"> 
 
 	<button id='addBtn' ng-click="addItem()"  >Add</button>
-	<span ng-if="checkField()">
+	<span ng-if="checkField()=true">
 		<script>document.body.style.background = "red"</script>
 	</span>
 
-	<span ng-if="!checkField()">
+	<span ng-if="checkField()=false">
 		<script>document.body.style.background = "blue"</script>
 	</span>
 
