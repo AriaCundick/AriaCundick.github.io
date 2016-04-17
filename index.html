@@ -63,21 +63,8 @@ Setup the graph
 	}];
 
 </script>
+
 <script src= "namesController.js"></script>
- <script>
- AmCharts.ready(function() {
- 	var chart = new AmCharts.AmSerialChart();
- 	chart.dataProvider = items;
- 	chart.categoryField = "name";
- 	var graph = new AmCharts.AmGraph();
-	graph.valueField = "quantity";
-	graph.type = "column";
-	chart.addGraph(graph);
-	chart.write('chartdiv');
- });
-
- </script>
-
 <p> Existing items in the document2: </p>
 
 <div ng-app="myApp" ng-controller="namesCtrl">
@@ -91,7 +78,20 @@ Setup the graph
 	Price: <input ng-model="addPrice"> 
 
 	<button id='addBtn' ng-click="addItem()"  >Add</button>
-	
+ 	<script>
+ 		var tracker = angular.module("myApp");
+		 AmCharts.ready(function() {
+		 	var chart = new AmCharts.AmSerialChart();
+		 	chart.dataProvider = tracker.items;
+		 	chart.categoryField = "name";
+		 	var graph = new AmCharts.AmGraph();
+			graph.valueField = "quantity";
+			graph.type = "column";
+			chart.addGraph(graph);
+			chart.write('chartdiv');
+		 });
+
+ 	</script>
 
 </div>
 
