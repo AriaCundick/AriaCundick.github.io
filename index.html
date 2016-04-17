@@ -78,7 +78,7 @@ Setup the graph
 	Price: <input ng-model="addPrice"> 
 
 	<button id='addBtn' ng-click="addItem()"  >Add</button>
- 	<script>
+ 	<script ng-app="myApp" ng-controller="myCtrl">
  		
 		 AmCharts.ready(function() {
 		 	var chart = new AmCharts.AmSerialChart();
