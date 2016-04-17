@@ -82,10 +82,10 @@ Setup the graph
  		
 		 AmCharts.ready(function() {
 		 	var chart = new AmCharts.AmSerialChart();
-		 	chart.dataProvider = chartData;//angular.element(document.getElementById('#angDiv')).scope().items;
-		 	chart.categoryField = "country";
+		 	chart.dataProvider = {{items}};//angular.element(document.getElementById('#angDiv')).scope().items;
+		 	chart.categoryField = "name";
 		 	var graph = new AmCharts.AmGraph();
-			graph.valueField = "visits";
+			graph.valueField = "quantity";
 			graph.type = "column";
 			chart.addGraph(graph);
 			chart.write('chartdiv');
