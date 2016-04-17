@@ -63,10 +63,11 @@ Setup the graph
 	}];
 
 </script>
+<script src= "namesController.js"></script>
  <script>
  AmCharts.ready(function() {
  	var chart = new AmCharts.AmSerialChart();
- 	chart.dataProvider = items;
+ 	chart.dataProvider = $scope.items;
  	chart.categoryField = "name";
  	var graph = new AmCharts.AmGraph();
 	graph.valueField = "quantity";
@@ -76,7 +77,7 @@ Setup the graph
  });
 
  </script>
-<script src= "namesController.js"></script>
+
 <p> Existing items in the document2: </p>
 
 <div ng-app="myApp" ng-controller="namesCtrl">
