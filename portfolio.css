@@ -1,0 +1,51 @@
+html, body, nav, ul {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background-color: #ededed;
+}
+#navList {
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	background-color: rgb(63, 60, 58);
+	padding: 10px 0px;
+}
+
+#navList li {
+	font-size:22px;
+	display: inline;
+	padding:10px 0;
+}
+
+#navList li a {
+	text-decoration: none;
+	color:white;
+	width: 100%;
+	height: auto;
+	padding:10px 20px;
+}
+
+#navList li:hover {
+	background-color: rgb(37, 37, 40);
+
+}
+
+.active {
+	background-color: blue;
+}
+
+.container {
+	background-color: white;
+	width:80%;
+	height:auto;
+	margin:50px auto 0 auto;
+}
+
+.content-box {
+	
+}
+sdf
