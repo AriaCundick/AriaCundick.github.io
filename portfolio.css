@@ -6,6 +6,8 @@ html, body, nav, ul {
 body {
 	background-color: #ededed;
 }
+/* navbar */
+
 #navList {
 	position:fixed;
 	left:0;
@@ -34,18 +36,58 @@ body {
 
 }
 
+/* intro box */
+
+#intro {
+	width: 90%;
+	text-align: center;
+}
+
+#introImg {
+	border-radius:50%;
+	height:500px;
+	width:400px;
+}
+
+#introPicBox {
+	width:80%;
+}
+
+#hr1 {
+	background-color:rgba(75, 221, 234, .5);
+	display: block;
+    height: 3px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+/* ------ general --------- */
 .active {
 	background-color: blue;
 }
 
 .container {
-	background-color: white;
-	width:80%;
+	
+	width:85%;
 	height:auto;
 	margin:50px auto 0 auto;
 }
 
 .content-box {
-	
+	background-color: white;
+	width:100%;
+	height:auto;
+	font-size:32px;
+	padding-bottom:10px;
+	text-align:center;
+	margin-top:5px;
+	padding-top:1px;
 }
-sdf
+
+.flex-parent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
