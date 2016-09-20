@@ -68,6 +68,8 @@ body {
 	margin: 0 20px;
 	border-radius:5px;
 }
+
+.wrap {flex-wrap:wrap;}
 /* ------ general --------- */
 .active {
 	background-color: blue;
