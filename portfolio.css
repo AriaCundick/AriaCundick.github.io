@@ -75,6 +75,10 @@ body {
 	background-color: blue;
 }
 
+.center-text {
+	text-align: center;
+}
+
 .container {
 	
 	width:85%;
