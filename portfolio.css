@@ -63,7 +63,11 @@ body {
     margin: 5px 0 0 0;
     padding: 0;
 }
-
+/* ------ snapshots ------- */
+.snap {
+	margin: 0 20px;
+	border-radius:5px;
+}
 /* ------ general --------- */
 .active {
 	background-color: blue;
