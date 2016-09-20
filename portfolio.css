@@ -67,12 +67,13 @@ body {
 .snap {
 	margin: 10px 20px;
 	border-radius:5px;
+	display:block;
 }
 
 .wrap {flex-wrap:wrap;}
 
 .desc {
-	font-size:12px;
+	font-size:20px;
 	margin:0;
 	padding:0;
 }
