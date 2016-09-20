@@ -70,6 +70,12 @@ body {
 }
 
 .wrap {flex-wrap:wrap;}
+
+div img p {
+	font-size:12px;
+	margin:0;
+	padding:0;
+}
 /* ------ general --------- */
 .active {
 	background-color: blue;
