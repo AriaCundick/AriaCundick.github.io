@@ -71,7 +71,7 @@ body {
 
 .wrap {flex-wrap:wrap;}
 
-div img p {
+.desc {
 	font-size:12px;
 	margin:0;
 	padding:0;
