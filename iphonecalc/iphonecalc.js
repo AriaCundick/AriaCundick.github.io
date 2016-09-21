@@ -10,7 +10,9 @@ var chainAdd = false;
 var $displayTxt;
 var $orangeButtons;
 
+console.log(-1)
 $(document).ready(function() {
+  console.log(0)
   $displayTxt = $("#displayTxt");
   $orangeButtons = $(".btnO");
   $("#display").text(eval(""));
