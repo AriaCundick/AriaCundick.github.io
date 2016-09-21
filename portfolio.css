@@ -11,8 +11,8 @@ body {
 @media (max-width: 767px) {
  #navlist {
  	position:fixed;
-	left:0;
-	right:0;
+	left:50%;
+	right:auto;
 	top:0;
 	background-color: rgba(256, 256, 256, .0); /*rgba(63, 60, 58, .0); */
 	padding: 10px 0px;
@@ -32,7 +32,7 @@ body {
 	position:fixed;
 	left:0;
 	bottom:auto;
-	top:calc(40%);
+	top:40%;
 	background-color: rgba(256, 256, 256, .0); /*rgba(63, 60, 58, .0); */
 	padding: 10px 0px;
 	-o-transition: .2s;
