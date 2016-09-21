@@ -4,7 +4,7 @@ html, body, nav, ul {
 }
 
 body {
-	background: url("https://hd.unsplash.com/photo-1436891620584-47fd0e565afb") no-repeat  fixed;
+	background: url("https://hd.unsplash.com/38/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg") no-repeat center  fixed;
 	position:fixed;
 	right:0;
 	left:0;
@@ -50,7 +50,7 @@ body {
 }
 
 #navList:hover {
-	background-color: rgba(256, 256, 256, 1);
+	background-color: rgba(20, 20, 20, 1);
 }
 
 #navList li {
@@ -68,7 +68,7 @@ body {
 
 #navList li a {
 	text-decoration: none;
-	color:black;
+	color:white;
 	width: 100%;
 	height: auto;
 	padding:10px 20px;
@@ -76,7 +76,7 @@ body {
 }
 
 #navList li:hover {
-	background-color: rgb(240, 230, 230); /* rgb(37, 37, 40) */
+	background-color: rgb(43, 42, 36); /* rgb(37, 37, 40) */
 }
 
 /* intro box */
@@ -152,11 +152,14 @@ body {
 	bottom:0;
 	top:0;
 	margin:100px 0;
-	background-color: white;
+
+	background-color: rgba(256, 256, 256, .7);
 	width:90%;
 	height:auto;
+
 	font-size:32px;
 	text-align:center;
+	color:black;
 	overflow:scroll;
 	overflow-x:hidden;
 }
@@ -243,7 +246,9 @@ iframe {
 footer {
 	position:fixed;
 	bottom:0;
-	right:0;
-	left:0;
-	color:black;
+	right:30%;
+	left:30%;
+	color:white;
+	background-color:rgba(0,0,0, .3);
+	border-radius:15px;
 }
