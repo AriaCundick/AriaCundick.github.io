@@ -11,16 +11,18 @@ body {
 #navList {
 	position:fixed;
 	left:0;
-	right:0;
-	top:0;
+	bottom:auto;
+	top:calc(40%);
 	background-color: rgb(63, 60, 58);
 	padding: 10px 0px;
 }
 
 #navList li {
 	font-size:22px;
-	display: inline;
+	display: block;
 	padding:10px 0;
+	height:50px;
+	text-align: center;
 }
 
 #navList li a {
@@ -29,6 +31,7 @@ body {
 	width: 100%;
 	height: auto;
 	padding:10px 20px;
+	line-height: 50px;
 }
 
 #navList li:hover {
