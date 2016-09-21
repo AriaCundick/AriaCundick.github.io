@@ -4,6 +4,7 @@ var popup = false;
 
 $(document).ready( function() {
 
+	$("#nav1").css("background-color", "rgba(240, 230, 230, 1)");
 	$("#nav1").mouseover( function() 
 	{
 		//Keep light color on active page
