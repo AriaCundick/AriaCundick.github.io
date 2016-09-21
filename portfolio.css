@@ -235,6 +235,7 @@ iframe {
     -moz-transition: .2s;
     -webkit-transition: .2s;
   	transition: .2s;
+  	z-index:6;
 }
 #closeBtn:hover {
 	background-color:red;
