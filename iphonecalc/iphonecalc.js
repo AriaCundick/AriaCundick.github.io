@@ -14,15 +14,17 @@ $(document).ready(function() {
   $displayTxt = $("#displayTxt");
   $orangeButtons = $(".btnO");
   $("#display").text(eval(""));
-  
+  console.log(1)
   //Fade out the shadow from the buttons
   $("button").mousedown(function() { UIDown($(this)); });
 
   //Reset the transition timer for clicking a button after it has been clicked.
   $("button").mouseup(function() {
+    console.log(2)
     calculate($(this));
     lengthChecker($displayTxt.text());
     UIUp($(this));
+    console.log(3)
   });
 
 });
