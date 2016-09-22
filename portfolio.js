@@ -1,7 +1,3 @@
-
-
-var popup = false;
-
 $(document).ready( function() {
 
 	$("#nav1").css("background-color", "rgba(43, 42, 36, 1)");
