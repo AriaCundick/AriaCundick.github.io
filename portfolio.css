@@ -154,7 +154,7 @@ body {
 	left:0;
 	bottom:0;
 	top:0;
-	margin: 50px 0 0 0;
+	margin: 25px 0 100px 0;
 	padding-right: 30px;
 	background-color: rgba(256, 256, 256, .7);
 	width:calc(100% - 200px);
@@ -262,6 +262,10 @@ footer {
 	background-color:rgba(0,0,0, .3);
 	border-radius:15px;
 	z-index:0;
+}
+
+footer p {
+	display:inline;
 }
 
 @media screen and (max-width: 767px) {
