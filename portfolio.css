@@ -266,7 +266,7 @@ footer {
 	z-index:0;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 767px) {
 	#navList {
 	position:fixed;
 	top:0;
