@@ -93,8 +93,10 @@ body {
 /* intro box */
 
 #introText {
+	padding-top:40px;
 	margin-left:50px;
-	padding-left:150px;
+
+	
 }
 .intro {
 	width: 80%;
@@ -112,6 +114,7 @@ body {
 #introPicBox {
 	width:100%;
 	margin-top:20px;
+	margin-left:100px;
 }
 
 #hr1 {
