@@ -12,8 +12,9 @@ html {
 	width:100%;
 	overflow:hidden;
 }
+
 body {
-	background: url("http://www.hd.unsplash.com/38/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg") no-repeat center;
+	background: url("https://hd.unsplash.com/38/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg") no-repeat center;
 
 	position:fixed;
 	right:10px;
@@ -25,10 +26,12 @@ body {
 }
 /* navbar */
 
-#navlist {
-	position:absolute;
+#navList {
+	position:fixed;
 	bottom:0;
 	right:0;
+	width:500px;
+	height:50px;
 	background-color: rgba(0, 0, 0, 1); /*rgba(63, 60, 58, .0); */
 	padding: 10px 0px;
 	
@@ -97,8 +100,9 @@ body {
 	height: auto;
 	padding:10px 20px;
 	line-height: 50px;
+	}
 }
-}
+
 #navList li a {
 	text-decoration: none;
 	color:white;
@@ -106,10 +110,6 @@ body {
 	height: auto;
 	padding:10px 20px;
 	line-height: 50px;
-}
-
-#navList li:hover {
-	background-color: rgb(43, 42, 36); /* rgb(37, 37, 40) */
 }
 
 /* intro box */
