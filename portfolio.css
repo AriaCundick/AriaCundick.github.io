@@ -5,7 +5,7 @@ html, body, nav, ul {
 
 html {
 	position:fixed;
-	right:10px;
+	right:0px;
 	left:0;
 	bottom:0;
 	top:0;
@@ -17,7 +17,7 @@ body {
 	background: url("https://hd.unsplash.com/38/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg") no-repeat center;
 
 	position:fixed;
-	right:10px;
+	right:0px;
 	left:0;
 	bottom:0;
 	top:0;
@@ -319,6 +319,7 @@ footer {
  footer {
  	left:0;
  	right:0;
+ 	height:auto;
  }
  footer p {
  	display:inline;
