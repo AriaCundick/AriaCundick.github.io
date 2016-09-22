@@ -109,9 +109,7 @@ body {
 	display:block;
 	z-index:0;
 }
-h1:hover {
-	background: rgba(0,0,0,.5);
-}
+
 .wrap {flex-wrap:wrap;}
 
 .desc {
@@ -289,6 +287,12 @@ footer {
 	z-index:1;
  }
 
+ #navList li a {
+	height: auto;
+	padding:10px 20px;
+	line-height: 50px;
+}
+
  .content-box {
 
  	margin-left:0;
@@ -321,6 +325,11 @@ footer {
  #introImg {
 	height:400px;
 	width:300px;
+}
+
+.snap {
+	width:90%;
+	height:40%;
 }
 
  #popup {
