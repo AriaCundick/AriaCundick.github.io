@@ -25,52 +25,39 @@ body {
 
 }
 /* navbar */
+#navList {
+	position:fixed;
+	left:0;
+	bottom:auto;
+	top:40%;
+	width:200px;
+	right:auto;
+	background-color: rgba(0, 0, 0, .7); /*rgba(63, 60, 58, .0); */
+	padding: 10px 0px;
+
+	-o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+  	transition: .2s;
+  	border-radius:5px;
+  	z-index:1;
+}
 
 
 
-
-	#navList {
-		position:fixed;
-		left:0;
-		bottom:auto;
-		top:40%;
-		width:200px;
-		right:auto;
-		background-color: rgba(0, 0, 0, .7); /*rgba(63, 60, 58, .0); */
-		padding: 10px 0px;
-
-		-o-transition: .2s;
-	    -ms-transition: .2s;
-	    -moz-transition: .2s;
-	    -webkit-transition: .2s;
-	  	transition: .2s;
-	  	border-radius:5px;
-	  	z-index:1;
-	}
-
-
-
-	#navList li {
-		font-size:30px;
-		display: block;
-		padding:10px 0;
-		height:50px;
-		text-align: center;
-		-o-transition: .2s;
-	    -ms-transition: .2s;
-	    -moz-transition: .2s;
-	    -webkit-transition: .2s;
-	  	transition: .2s;
-	}
-
-	#navList li a {
-	text-decoration: none;
-	color:white;
-	width: 100%;
-	height: auto;
-	padding:10px 20px;
-	line-height: 50px;
-	}
+#navList li {
+	font-size:30px;
+	display: block;
+	padding:10px 0;
+	height:50px;
+	text-align: center;
+	-o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+  	transition: .2s;
+}
 
 
 #navList li a {
@@ -85,15 +72,8 @@ body {
 /* intro box */
 
 #introText {
-<<<<<<< HEAD
 	padding-top:40px;
 	margin-left:100px;
-
-	
-=======
-	margin-left:50px;
-	padding-left:150px;
->>>>>>> parent of b2bcba8... r
 }
 .intro {
 	width: 80%;
@@ -277,30 +257,47 @@ footer {
 	top:0;
 	right:0;
 	left:0;
+	width:auto;
 	margin:0 auto;
-	background-color: rgba(0, 0, 0, 1); /*rgba(63, 60, 58, .0); */
-	padding: 10px 0px;
-	
-	-o-transition: .2s;
-	-ms-transition: .2s;
-	-moz-transition: .2s;
-	-webkit-transition: .2s;
-	transition: .2s;
+
 	z-index:1;
 }
 
  #navList li {
  	font-size:30px;
-	display: inline;
+	display: inline-block;
 	padding:10px 0;
 	height:50px;
 	width: 200px;
 	text-align: center;
-	-o-transition: .2s;
-    -ms-transition: .2s;
-    -moz-transition: .2s;
-    -webkit-transition: .2s;
-  	transition: .2s;
-
+	z-index:1;
  }
+
+ .content-box {
+
+ 	margin-left:0;
+ 	width: 100%;
+ }
+ .container {
+ 	width:100%;
+ }
+
+ #introPicBox {
+ 	padding-top:100px;
+ }
+
+ #slide1 {
+ 	flex-wrap: wrap; 
+ }
+
+ .intro {
+ 	padding-left:0;
+ }
+ #introText {
+ 	margin-left:0;
+ }
+ #popup {
+ 	margin-top:50px;
+ }
+ #closeBtn{margin-top:30px;}
 }
