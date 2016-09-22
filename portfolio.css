@@ -311,19 +311,28 @@ footer {
  	padding-left:0;
  	font-size:20px;
  }
- 
+
  #introText {
  	margin-left:0;
  }
+
+ #introImg {
+	height:400px;
+	width:300px;
+}
+
  #popup {
  	margin-top:50px;
  }
+
  #closeBtn{margin-top:30px;}
+
  footer {
  	left:0;
  	right:0;
  	height:auto;
  }
+
  footer p {
  	display:inline;
  }
