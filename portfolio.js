@@ -51,6 +51,7 @@ $(document).ready( function() {
 	$("#closeBtn").on("click", function() {
 		$("#popup").fadeOut(500, function() {
 			$(this).css("display", "none");
+			$("iframe").attr("src", "");
 		});
 	});
 
