@@ -39,8 +39,14 @@ $(document).ready( function() {
 	});
 
 	$(".btnMain").on("click", function(event) {
-		event.stopPropagation();
+		if($(window).width() < 767) {
+			$(".btnMain").attr("target", "");
+			$(".btnMain").attr("onclick", "");
+		}
+		else
+			event.stopPropagation();
 	});
+
 
 	$("#closeBtn").on("click", function() {
 		$("#popup").fadeOut(500, function() {
