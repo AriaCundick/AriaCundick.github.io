@@ -283,7 +283,8 @@ footer {
 	display: inline-block;
 	padding:10px 0;
 	height:50px;
-	width: 100px;
+	min-width: 100px;
+	width:auto;
 	text-align: center;
 	z-index:1;
  }
