@@ -39,8 +39,8 @@ $(document).ready( function() {
 	});
 
 	$(".btnMain").on("click", function(event) {
-		if($(window).width() < 767) {
-			$(".btnMain").attr("target", "");
+		if($(window).width() <= 767) {
+			$(".btnMain").attr("target", "_blank");
 			$(".btnMain").attr("onclick", "blank()");
 		}
 		else
