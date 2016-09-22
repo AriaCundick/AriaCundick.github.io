@@ -282,7 +282,7 @@ footer {
  	font-size:16px;
 	display: inline-block;
 	padding:10px 0;
-	height:50px;
+	height:auto;
 	min-width: 100px;
 	width:auto;
 	text-align: center;
@@ -319,5 +319,8 @@ footer {
  footer {
  	left:0;
  	right:0;
+ }
+ footer p {
+ 	display:inline;
  }
 }
