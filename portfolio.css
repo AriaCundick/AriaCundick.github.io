@@ -106,7 +106,7 @@ body {
 .snap {
 	margin: 10px 20px;
 	border-radius:5px;
-	display:block;
+	display:inline-block;
 	z-index:0;
 }
 
