@@ -40,7 +40,7 @@ body {
 	left:0;
 	bottom:auto;
 	top:40%;
-	background-color: rgba(256, 256, 256, 1); /*rgba(63, 60, 58, .0); */
+	background-color: rgba(0, 0, 0, 1); /*rgba(63, 60, 58, .0); */
 	padding: 10px 0px;
 	-o-transition: .2s;
     -ms-transition: .2s;
