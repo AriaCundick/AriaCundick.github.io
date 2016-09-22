@@ -292,16 +292,17 @@ footer {
  .content-box {
 
  	margin-left:0;
+ 	margin-right:0;
  	width: 100%;
  	height:98%;
  }
 
  .container {
- 	width:100%;
+ 	width:auto;
  }
 
  #introPicBox {
- 	padding-top:100px;
+ 	padding-bottom:100px;
  }
 
  #slide1 {
