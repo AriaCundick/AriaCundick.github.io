@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="main.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="flex-container">
+    
+    <!-- SIDEBAR -->
+    <div id="sideNav" >
+
+      <!-- HEADER --> 
+      <div id="header" > 
+  
+        <div id="navBtnWrapper"> 
+          <button  id="navBtn"  type="button" class="btn"><i id="bars" class="fa fa-sort" aria-hidden="true"></i></button>
+        </div> 
+ 
+        <h1 style="padding-right:30px">Top Twitch.tv Streamers</h1 > 
+      </div> 
+      <!-- LIST -->
+      <div id="listWrapper">
+        <ol id="list">
+        </ol>
+      </div>
+    </div>  
+    <!-- FRAME -->
+    <div id="frame"> 
+      <div id="details">  
+        <h1 id="channelHeader">Click or Hover over the streams!</h1>
+        <div id="streamWrapper" >
+           
+          <!-- VIDEO -->
+          <div id="iframeWrapper">
+           <iframe id="video" name="iframe1" frameborder= "0"></iframe>
+              
+          </div > 
+           
+          <!-- INFO -->
+          <div id="info">
+            <div id="status" class="box"><span style="font-size:25px">STATUS:</span><br/></div>
+            <div id="followers" class="box"><span style="font-size:25px">FOLLOWERS:</span><br/></div>
+              <div id="viewers" class="box"><span style="font-size:25px">VIEWERS:</span><br/></div>
+          </div> 
+        </div> 
+      </div>
+      <div id="footerBox"> 
+        <p id="footer">Created by Aria C. using the <a href="https://github.com/justintv/Twitch-API/blob/master/v3_resources/search.md" target="_blank" style="color:black;text-decoration:underline">Twith.tv API</a></p> 
+      </div>
+    </div>
+    
+  </div>
+</div>
+</body>
+</html>

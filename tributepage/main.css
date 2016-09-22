@@ -1,0 +1,42 @@
+.scale-img {
+  height: 250px;
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background: url("https://hd.unsplash.com/photo-1428956069401-a496097b26d1") no-repeat center fixed;
+  font-family:monospace;
+  background-size: cover;
+}
+
+li {
+  font-size:16px;
+  font-family: "Courier New", Courier, monospace
+}
+#subH {
+  margin-top:-5px;
+  margin-bottom:50px;
+}
+
+#div1 {
+  margin: 50px 200px 50px 200px;
+  background-color:#cccccc;
+  border-style:thick;
+  border-radius:25px;
+}
+
+#btnSeeMore {
+  margin: 30px auto 20px auto;
+  display: block;
+  height: 50px;
+}
+
+#timeline {
+  float: none;
+  margin: 0 auto;
+  margin-top:50px;
+  
+}
