@@ -3,6 +3,7 @@ var firstSearch = false;
 var target="iframe1";
 var onCF = "wikiViewer()";
 
+$(document).ready(function() {
 if ($(window).width() <= 767) {
   target="_blank";   
   onCF = "";
@@ -42,6 +43,9 @@ $("#findBtn").click(function() {
       }
     });
 });
+
+
+})
 
 var wikiViewer = function() {
   if (nav) {

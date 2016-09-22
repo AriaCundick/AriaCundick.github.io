@@ -1,7 +1,8 @@
 //Auto play boolean for yt video.
 playOnClick = false;  
 
-//New Quote button
+$(document).ready(function() {
+  //New Quote button
 $("#qtBtn").on("click", function() {
   if (location.protocol === 'https:') 
     $("#quoteText").html("Please change your URL protocol to http")
@@ -45,4 +46,5 @@ $("#qtBtn").on("click", function() {
     $(this).fadeIn(1000);
   });
   }
+});
 });
