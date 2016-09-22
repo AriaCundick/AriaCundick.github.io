@@ -41,7 +41,7 @@ $(document).ready( function() {
 	$(".btnMain").on("click", function(event) {
 		if($(window).width() < 767) {
 			$(".btnMain").attr("target", "");
-			$(".btnMain").attr("onclick", "");
+			$(".btnMain").attr("onclick", "blank()");
 		}
 		else
 			event.stopPropagation();
@@ -59,3 +59,5 @@ $(document).ready( function() {
 var createPopup = function() {
 	$("#popup").fadeIn().css("display", "block");
 }
+
+var blank = function (){};
