@@ -43,8 +43,7 @@ $(document).ready( function() {
 			$(".btnMain").attr("target", "_blank");
 			$(".btnMain").attr("onclick", "blank()");
 		}
-		else
-			event.stopPropagation();
+		
 	});
 
 

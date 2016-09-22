@@ -268,7 +268,7 @@ footer p {
 	display:inline;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
 	#navList {
 	position:fixed;
 	top:0;
@@ -285,7 +285,7 @@ footer p {
 	display: inline-block;
 	padding: auto 0;
 	height:auto;
-	min-width: 100px;
+	min-width: 25px;
 	width:auto;
 	text-align: center;
 	z-index:1;
@@ -293,12 +293,11 @@ footer p {
 
  #navList li a {
 	height: auto;
-	padding:0px 20px;
+	padding:0px 10px;
 	line-height: 50px;
 }
 
  .content-box {
-
  	margin-left:0;
  	margin-right:0;
  	margin-top:100px;
@@ -344,6 +343,7 @@ footer p {
 .desc {
 	font-size:16px;
 }
+
 #slide2 p {font-size:20px;}
 
 #slide2 {
