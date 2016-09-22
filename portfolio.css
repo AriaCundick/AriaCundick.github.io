@@ -293,8 +293,8 @@ footer {
 
  	margin-left:0;
  	width: 100%;
- 	font-size:20px;
  }
+
  .container {
  	width:100%;
  }
@@ -309,7 +309,9 @@ footer {
 
  .intro {
  	padding-left:0;
+ 	font-size:20px;
  }
+ 
  #introText {
  	margin-left:0;
  }
