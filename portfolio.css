@@ -251,7 +251,7 @@ footer {
 	border-radius:15px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
 	#navList {
 	position:fixed;
 	top:0;
