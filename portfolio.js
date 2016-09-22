@@ -42,7 +42,7 @@ $(document).ready( function() {
 		$("#slide3").css("display", "block");
 	});
 
-	$(".btn").on("click", function(event) {
+	$(".btnMain").on("click", function(event) {
 		event.stopPropagation();
 	});
 
@@ -51,6 +51,7 @@ $(document).ready( function() {
 			$(this).css("display", "none");
 		});
 	});
+
 })
 
 var createPopup = function() {
