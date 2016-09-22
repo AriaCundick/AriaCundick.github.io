@@ -42,7 +42,7 @@ body {
 	width: 80%;
 	text-align: center;
 	font-size:40px;
-	padding-left:20px;
+	padding-left:20pxv;
 }
 
 #introImg {
@@ -69,8 +69,11 @@ body {
 	margin: 10px 20px;
 	border-radius:5px;
 	display:block;
+	z-index:0;
 }
-
+h1:hover {
+	background: rgba(0,0,0,.5);
+}
 .wrap {flex-wrap:wrap;}
 
 .desc {
@@ -78,6 +81,16 @@ body {
 	margin:0;
 	padding:0;
 }
+
+.darkhover {
+	z-index:0;
+}
+
+.darkhover:hover {
+	z-index:1;
+	background-color:rgba(256,0,0,.5);
+}
+
 /* ------ general --------- */
 .active {
 	background-color: blue;
