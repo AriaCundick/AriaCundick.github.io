@@ -115,10 +115,15 @@ body {
 /* intro box */
 
 #introText {
+<<<<<<< HEAD
 	padding-top:40px;
 	margin-left:100px;
 
 	
+=======
+	margin-left:50px;
+	padding-left:150px;
+>>>>>>> parent of b2bcba8... r
 }
 .intro {
 	width: 80%;
@@ -136,7 +141,6 @@ body {
 #introPicBox {
 	width:100%;
 	margin-top:20px;
-	margin-left:100px;
 }
 
 #hr1 {
