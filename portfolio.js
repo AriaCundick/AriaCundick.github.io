@@ -1,7 +1,3 @@
-
-
-var popup = false;
-
 $(document).ready( function() {
 
 	$("#nav1").css("background-color", "rgba(43, 42, 36, 1)");
@@ -43,12 +39,18 @@ $(document).ready( function() {
 	});
 
 	$(".btnMain").on("click", function(event) {
-		event.stopPropagation();
+		if($(window).width() <= 767) {
+			$(".btnMain").attr("target", "_blank");
+			$(".btnMain").attr("onclick", "blank()");
+		}
+		
 	});
+
 
 	$("#closeBtn").on("click", function() {
 		$("#popup").fadeOut(500, function() {
 			$(this).css("display", "none");
+			$("iframe").attr("src", "");
 		});
 	});
 
@@ -57,3 +59,5 @@ $(document).ready( function() {
 var createPopup = function() {
 	$("#popup").fadeIn().css("display", "block");
 }
+
+var blank = function (){};
