@@ -5,8 +5,8 @@ $(document).ready( function() {
 	{
 		//Keep light color on active page
 		$("#nav1").css("background-color", "rgba(43, 42, 36, 1)");
-		$("#nav2").css("background-color", "rgba(43, 42, 36, 0)");
-		$("#nav3").css("background-color", "rgba(43, 42, 36, 0)");
+		$("#nav2").css("background-color", "#101010");
+		$("#nav3").css("background-color", "#101010");
 
 		$("#slide1").css("display", "flex");
 		$("#slide2").css("display", "none");
@@ -17,9 +17,9 @@ $(document).ready( function() {
 	$("#nav2").mouseover( function() 
 	{
 		//Keep light color on active page
-		$("#nav1").css("background-color", "rgba(43, 42, 36, 0)");
+		$("#nav1").css("background-color", "#101010");
 		$("#nav2").css("background-color", "rgba(43, 42, 36, 1)");
-		$("#nav3").css("background-color", "rgba(43, 42, 36, 0)");
+		$("#nav3").css("background-color", "#101010");
 
 		$("#slide1").css("display", "none");
 		$("#slide2").css("display", "block");
@@ -29,8 +29,8 @@ $(document).ready( function() {
 	$("#nav3").mouseover( function() 
 	{
 		//Keep light color on active page
-		$("#nav1").css("background-color", "rgba(43, 42, 36, 0)");
-		$("#nav2").css("background-color", "rgba(43, 42, 36, 0)");
+		$("#nav1").css("background-color", "#101010");
+		$("#nav2").css("background-color", "#101010");
 		$("#nav3").css("background-color", "rgba(43, 42, 36, 1)");
 
 		$("#slide1").css("display", "none");
@@ -51,6 +51,7 @@ $(document).ready( function() {
 		$("#popup").fadeOut(500, function() {
 			$(this).css("display", "none");
 			$("iframe").attr("src", "");
+			$("#navList").css("z-index", "1");
 		});
 	});
 
@@ -58,6 +59,7 @@ $(document).ready( function() {
 
 var createPopup = function() {
 	$("#popup").fadeIn().css("display", "block");
+	$("#navList").css("z-index", "0");
 }
 
 var blank = function (){};
