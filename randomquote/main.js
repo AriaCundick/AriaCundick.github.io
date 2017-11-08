@@ -10,7 +10,7 @@ $("#qtBtn").on("click", function() {
   //start the video only once.
   if(!playOnClick)
   {
-    $("#wanderly").attr("src", "https://www.youtube.com/embed/VGNwXq6vPoI?autoplay=1");
+    $("#wanderly").attr("src", "https://www.youtube.com/embed/KGTdZ9vGI3s?autoplay=1");
     playOnClick=true;
   }
   
